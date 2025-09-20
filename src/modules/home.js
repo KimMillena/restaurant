@@ -22,9 +22,14 @@ export const home = () => {
     heroDesc.classList.add("hero-desc");
     heroDesc.textContent = "Restaurant Description...";
 
+    const menuBtn = document.createElement("button");
+    menuBtn.classList.add("menu-btn");
+    menuBtn.textContent = "Our Menu";
+
     heroSection.appendChild(heroImage);
     rightSection.appendChild(heroTitle);
     rightSection.appendChild(heroDesc);
+    rightSection.appendChild(menuBtn);
     heroSection.appendChild(rightSection);
 
     homeContainer.appendChild(heroSection);
