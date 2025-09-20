@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* HEADER AND NAV STYLINGS */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 6rem;
+    gap: 1rem;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
