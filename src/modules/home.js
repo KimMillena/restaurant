@@ -1,3 +1,7 @@
+import sushiHero from "../assets/img/sushi-hero.jpg";
+
+console.log("Webpack resolved image to:", sushiHero);
+
 export const home = () => {
     const pageContent = document.querySelector("#content");
 
@@ -8,8 +12,9 @@ export const home = () => {
     heroSection.classList.add("hero-section");
 
      // placeholder image
-    const heroImage = document.createElement("div");
+    const heroImage = document.createElement("img");
     heroImage.classList.add("hero-img");
+    heroImage.src = sushiHero;
 
     const rightSection = document.createElement("div");
     rightSection.classList.add("right-section");

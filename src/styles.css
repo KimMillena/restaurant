@@ -27,11 +27,18 @@ nav {
 .hero-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .hero-img {
+    flex: 1;
     background-color: #C9C9C9;
-    width: 200px;
-    height: 200px;
+    width: clamp(200px, 50%, 400px);
+    height: auto;
+    object-fit: cover;
 } 
+
+.right-section {
+    flex-direction: column;
+    flex: 1;
+}
