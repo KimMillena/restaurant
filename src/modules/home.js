@@ -18,9 +18,13 @@ export const home = () => {
     heroTitle.classList.add("hero-title");
     heroTitle.textContent = "Restaurant";
 
+    const heroDesc = document.createElement("p");
+    heroDesc.classList.add("hero-desc");
+    heroDesc.textContent = "Restaurant Description...";
 
     heroSection.appendChild(heroImage);
     rightSection.appendChild(heroTitle);
+    rightSection.appendChild(heroDesc);
     heroSection.appendChild(rightSection);
 
     homeContainer.appendChild(heroSection);
