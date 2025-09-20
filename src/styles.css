@@ -19,3 +19,19 @@ nav {
     display: flex;
     gap: 1rem;
 }
+
+#content {
+    margin: 0 7.5rem;
+}
+
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.hero-img {
+    background-color: #C9C9C9;
+    width: 200px;
+    height: 200px;
+} 

@@ -35,5 +35,4 @@ export const home = () => {
     homeContainer.appendChild(heroSection);
 
     pageContent.appendChild(homeContainer);
-   
 }
