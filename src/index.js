@@ -12,6 +12,21 @@ home();
 
 const setActivePage = (e) => {
     const page = e.target.id;
+
+     switch(page) {
+        case "home":
+            home();
+            break;
+        case "menu":
+            menu();
+            break;
+        case "about":
+            about();
+            break;
+        default:
+            home();
+            break;
+    }
 };
 
 homeBtn.addEventListener("click", (e) => { setActivePage(e) });
