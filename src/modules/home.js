@@ -7,6 +7,12 @@ export const home = () => {
     const heroSection = document.createElement("div");
     heroSection.classList.add("hero-section");
 
+     // placeholder image
+    const heroImage = document.createElement("div");
+    heroImage.classList.add("hero-img");
+
+    heroSection.appendChild(heroImage);
+
     homeContainer.appendChild(heroSection);
 
     pageContent.appendChild(homeContainer);
