@@ -11,6 +11,7 @@ const aboutBtn = document.querySelector(".about-btn");
 home();
 
 const setActivePage = (e) => {
+    pageContent.innerHTML = "";
     const page = e.target.id;
 
      switch(page) {

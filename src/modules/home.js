@@ -28,7 +28,7 @@ const createDesc = () => {
 
 const createBtn = () => {
     const menuBtn = document.createElement("button");
-    menuBtn.classList.add("menu-btn");
+    menuBtn.classList.add("hero-btn");
     menuBtn.textContent = "Our Menu";
 
     return menuBtn;
