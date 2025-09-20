@@ -10,8 +10,10 @@ const aboutBtn = document.querySelector(".about-btn");
 
 home();
 
+const setActivePage = (e) => {
+    const page = e.target.id;
+};
+
 homeBtn.addEventListener("click", (e) => { setActivePage(e) });
 menuBtn.addEventListener("click", (e) => { setActivePage(e) });
 aboutBtn.addEventListener("click", (e) => { setActivePage(e) });
-
-
