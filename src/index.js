@@ -1,4 +1,5 @@
 import "./styles.css";
+import { pageLoad } from "./modules/pageLoad.js";
 import { home } from "./modules/home.js";
 import { menu } from "./modules/menu.js";
 import { about } from "./modules/about";
@@ -8,7 +9,7 @@ const homeBtn = document.querySelector(".home-btn");
 const menuBtn = document.querySelector(".menu-btn");
 const aboutBtn = document.querySelector(".about-btn");
 
-home();
+pageLoad();
 
 const setActivePage = (e) => {
     pageContent.innerHTML = "";
