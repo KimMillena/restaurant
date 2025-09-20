@@ -11,7 +11,11 @@ export const home = () => {
     const heroImage = document.createElement("div");
     heroImage.classList.add("hero-img");
 
+    const rightSection = document.createElement("div");
+    rightSection.classList.add("right-section");
+
     heroSection.appendChild(heroImage);
+    heroSection.appendChild(rightSection);
 
     homeContainer.appendChild(heroSection);
 
