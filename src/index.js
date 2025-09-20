@@ -1,1 +1,1 @@
-console.log("Testing");
+import "./styles.css";
