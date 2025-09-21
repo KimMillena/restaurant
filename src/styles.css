@@ -7,8 +7,12 @@
 }
 
 :root {
+    /* FONT */
     --primary-font: "Noto Serif JP";
     --secondary-font: "Noto Sans JP";
+
+    /* SUSHI COLOR */   
+    --sushi-color: #FA8072;
 }
 
 /* HEADER AND NAV STYLINGS */
@@ -41,7 +45,7 @@ nav {
 
 .nav-btn:hover, .nav-btn:focus {
     text-decoration: underline;
-    text-decoration-color: #FA8072;
+    text-decoration-color: var(--sushi-color);
     text-decoration-thickness: 0.15rem;
     text-underline-offset: 0.3rem;
 }
@@ -87,6 +91,10 @@ nav {
 
 .hero-subtitle {
     font-family: var(--secondary-font), sans-serif;
+}
+
+.hero-btn {
+
 }
 
 /* MENU STYLINGS */
