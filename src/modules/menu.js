@@ -1,6 +1,7 @@
 import sushiImg from "../assets/img/sushi-1858696_1920.jpg";
 import sushiImg1 from "../assets/img/food-1406883_1920.jpg";
-import sushiImg2 from "../assets/img/sushi-2714101_1920.jpg";
+import sushiImg2 from "../assets/img/maki-roll-2186518_1920.jpg";
+import sushiImg3 from "../assets/img/sushi-2714101_1920.jpg";
 
 const pageContent = document.querySelector("#content");
 
@@ -16,21 +17,31 @@ const createMenuCard = () => {
   const menuItems = [
     {
       prodName: "Sāmon Sashimi Mori",
-      desc: "Salmon Sashimi Platter, fresh salmon slices served with soy sauce and garnish.",
+      prodSubName: "Salmon Sashimi Platter",
+      desc: "Fresh salmon slices served with soy sauce and garnish.",
       price: "¥680",
       img: sushiImg,
     },
     {
       prodName: "Kuro Goma Maki",
-      desc: "Black Sesame Roll, crab and avocado roll topped with black sesame seeds.",
+      prodSubName: "Black Sesame Roll",
+      desc: "Crab and avocado roll topped with black sesame seeds.",
       price: "¥520",
       img: sushiImg1,
     },
     {
-      prodName: "Tempura Roll",
-      desc: "Tempura Crunch Roll, shrimp tempura roll with spicy mayo and sweet glaze.",
-      price: "¥580",
+      prodName: "Ikura Roll",
+      prodSubName: "Salmon Roe Roll",
+      desc: "Crab and cucumber roll topped with vibrant ikura (salmon roe) and creamy sauce. Served with pickled ginger and wasabi.",
+      price: "¥620",
       img: sushiImg2,
+    },
+    {
+      prodName: "Tempura Roll",
+      prodSubName: "Tempura Crunch Roll",
+      desc: "Shrimp tempura roll with spicy mayo and sweet glaze.",
+      price: "¥580",
+      img: sushiImg3,
     },
   ];
 
@@ -47,6 +58,10 @@ const createMenuCard = () => {
     menuName.classList.add("menu-name");
     menuName.textContent = item.prodName;
 
+    const menuSubName = document.createElement("p");
+    menuSubName.classList.add("menu-subname");
+    menuSubName.textContent = item.prodSubName;
+
     const menuDesc = document.createElement("p");
     menuDesc.classList.add("menu-desc");
     menuDesc.textContent = item.desc;
@@ -57,6 +72,7 @@ const createMenuCard = () => {
 
     menuCard.appendChild(menuImage);
     menuCard.appendChild(menuName);
+    menuCard.appendChild(menuSubName);
     menuCard.appendChild(menuDesc);
     menuCard.appendChild(menuPrice);
 
