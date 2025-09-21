@@ -24,24 +24,32 @@ header {
 
 nav {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
+}
+
+.restaurant-name {
+    font-family: var(--primary-font), serif;
 }
 
 .nav-btn {
+    font-family: var(--secondary-font);
+    font-size: 1rem;
     background: none;
     border: none;
     cursor: pointer;
 }
 
-.nav-btn:hover {
+.nav-btn:hover, .nav-btn:focus {
     text-decoration: underline;
+    text-decoration-color: #FA8072;
+    text-decoration-thickness: 0.15rem;
     text-underline-offset: 0.3rem;
 }
 
 /* CONTENT STYLINGS */
 
 #content {
-    margin: 0 7.5rem;
+    padding: 3rem 6rem;
 }
 
 .hero-section {
