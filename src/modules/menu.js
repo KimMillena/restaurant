@@ -78,6 +78,6 @@ export const menu = () => {
 
     const menuTitle = createTitle();
 
-    pageContent.appendChild(menuSection());
     pageContent.appendChild(menuTitle);
+    pageContent.appendChild(menuSection());
 };
