@@ -182,6 +182,7 @@ nav {
 
 .about-title {
   font-family: var(--primary-font), serif;
+  margin-bottom: 2rem;
 }
 
 .about-desc {
