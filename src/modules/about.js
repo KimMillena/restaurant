@@ -13,7 +13,8 @@ const createTitle = () => {
 const createDesc = () => {
   const aboutDesc = document.createElement("p");
   aboutDesc.classList.add("about-desc");
-  aboutDesc.textContent = "Description...";
+  aboutDesc.textContent =
+    "At Oishii Sushi, we believe sushi is more than a dish—it's a story told through flavor, texture, and tradition. Rooted in Japanese culinary artistry and inspired by modern tastes, our menu blends premium ingredients with thoughtful presentation. From delicate sashimi to bold fusion rolls, every plate is crafted to honor authenticity while inviting discovery. Whether you're a seasoned sushi lover or exploring it for the first time, we welcome you to experience the harmony of freshness, creativity, and care in every bite.";
 
   return aboutDesc;
 };
