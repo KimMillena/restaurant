@@ -52,6 +52,8 @@ nav {
     padding: 3rem 6rem;
 }
 
+/* HERO SECTION STYLINGS */
+
 .hero-section {
     display: flex;
     flex-wrap: wrap;
@@ -63,6 +65,7 @@ nav {
     background-color: #C9C9C9;
     width: clamp(200px, 50%, 400px);
     height: auto;
+    border-radius: 2rem;
     object-fit: cover;
 } 
 
