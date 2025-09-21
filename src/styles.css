@@ -147,6 +147,9 @@ nav {
 
 .menu-title {
   font-family: var(--primary-font), serif;
+  text-decoration: underline;
+  text-decoration-color: var(--sushi-color);
+  text-underline-offset: 0.75rem;
   margin-bottom: 2rem;
 }
 
