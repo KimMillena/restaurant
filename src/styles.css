@@ -180,6 +180,14 @@ nav {
   gap: 5rem;
 }
 
+.about-title {
+  font-family: var(--primary-font), serif;
+}
+
+.about-desc {
+  font-family: var(--secondary-font), sans-serif;
+}
+
 .image-container {
   display: flex;
   gap: 1rem;
