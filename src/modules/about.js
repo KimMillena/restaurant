@@ -22,6 +22,9 @@ const imageContainer = () => {
   const imageContainer = document.createElement("div");
   imageContainer.classList.add("image-container");
 
+  const rightContainer = document.createElement("div");
+  rightContainer.classList.add("right-container");
+
   const aboutImage = document.createElement("img");
   aboutImage.classList.add("about-image");
   aboutImage.id = "about-image";
@@ -37,9 +40,11 @@ const imageContainer = () => {
   aboutImage2.id = "about-image2";
   aboutImage2.src = sushiPerson2;
 
+  rightContainer.appendChild(aboutImage1);
+  rightContainer.appendChild(aboutImage2);
+
   imageContainer.appendChild(aboutImage);
-  imageContainer.appendChild(aboutImage1);
-  imageContainer.appendChild(aboutImage2);
+  imageContainer.appendChild(rightContainer);
 
   return imageContainer;
 };
@@ -50,13 +55,17 @@ export const about = () => {
   const aboutContainer = document.createElement("div");
   aboutContainer.classList.add("about-container");
 
+  const leftContainer = document.createElement("div");
+  leftContainer.classList.add("left-container");
+
   const imgContainer = imageContainer();
   const aboutTitle = createTitle();
   const aboutDesc = createDesc();
 
+  leftContainer.appendChild(aboutTitle);
+  leftContainer.appendChild(aboutDesc);
+  aboutContainer.appendChild(leftContainer);
   aboutContainer.appendChild(imgContainer);
-  aboutContainer.appendChild(aboutTitle);
-  aboutContainer.appendChild(aboutDesc);
 
   pageContent.appendChild(aboutContainer);
 };

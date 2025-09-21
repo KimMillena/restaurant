@@ -172,6 +172,37 @@ nav {
   font-weight: bold;
 }
 
+/* ABOUT STYLINGS */
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.image-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#about-image {
+  height: 100%;
+}
+
+.about-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
 /* FOOTER STYLINGS */
 
 footer {
