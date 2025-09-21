@@ -74,6 +74,12 @@ nav {
     flex: 1;
 }
 
+.hero-heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 /* MENU STYLINGS */
 
 .menu-section {
