@@ -15,19 +15,19 @@ const createMenuCard = () => {
         { 
             prodName: "Sushi1", 
             desc: "Desc1", 
-            price: "10", 
+            price: "¥10", 
             img: sushiImg,
         },
         { 
             prodName: "Sushi2", 
             desc: "Desc2", 
-            price: "20", 
+            price: "¥20", 
             img: sushiImg,
         },
         { 
             prodName: "Sushi3", 
             desc: "Desc3", 
-            price: "30", 
+            price: "¥30", 
             img: sushiImg,
         },
     ];
@@ -41,7 +41,7 @@ const createMenuCard = () => {
         menuImage.classList.add("menu-img");
         menuImage.src = item.img;
 
-        const menuName = document.createElement("h1");
+        const menuName = document.createElement("h2");
         menuName.classList.add("menu-name");
         menuName.textContent = item.prodName;
 
