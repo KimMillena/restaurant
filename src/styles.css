@@ -176,8 +176,12 @@ nav {
 
 .about-container {
   display: flex;
-  justify-content: space-between;
-  gap: 5rem;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.left-container {
+  width: 50%;
 }
 
 .about-title {
@@ -186,7 +190,9 @@ nav {
 }
 
 .about-desc {
+  width: 90%;
   font-family: var(--secondary-font), sans-serif;
+  line-height: 1.6;
 }
 
 .image-container {
