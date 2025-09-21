@@ -81,8 +81,8 @@ nav {
 }
 
 .right-section {
-  flex-direction: column;
   flex: 1;
+  flex-direction: column;
 }
 
 .hero-heading {
@@ -111,6 +111,7 @@ nav {
   color: #fff;
   font-family: var(--secondary-font), sans-serif;
   font-size: 1rem;
+  font-weight: 500;
   background-color: var(--sushi-color);
   border: none;
   border-radius: 2rem;
@@ -125,6 +126,11 @@ nav {
   place-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+}
+
+.menu-title {
+  font-family: var(--primary-font), serif;
+  margin-bottom: 2rem;
 }
 
 .menu-img {
