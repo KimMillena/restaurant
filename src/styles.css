@@ -27,6 +27,17 @@ nav {
     gap: 1rem;
 }
 
+.nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
+
 /* CONTENT STYLINGS */
 
 #content {
