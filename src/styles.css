@@ -108,6 +108,7 @@ nav {
 .hero-desc {
   width: 90%;
   font-family: var(--secondary-font), sans-serif;
+  line-height: 1.6;
   margin-bottom: 2rem;
 }
 
@@ -166,6 +167,10 @@ nav {
 .menu-desc,
 .menu-price {
   font-family: var(--secondary-font), sans-serif;
+}
+
+.menu-desc {
+  line-height: 1.6;
 }
 
 .menu-price {
