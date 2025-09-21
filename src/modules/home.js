@@ -14,11 +14,21 @@ const createImage = () => {
 };
 
 const createTitle = () => {
+    const heroHeading = document.createElement("div");
+    heroHeading.classList.add("hero-heading");
+
     const heroTitle = document.createElement("h1");
     heroTitle.classList.add("hero-title");
     heroTitle.textContent = "Restaurant";
 
-    return heroTitle;
+    const heroSubtitle = document.createElement("span");
+    heroSubtitle.classList.add("hero-subtitle");
+    heroSubtitle.textContent = "Subtitle";
+
+    heroHeading.appendChild(heroTitle);
+    heroHeading.appendChild(heroSubtitle);
+
+    return heroHeading;
 };
 
 const createDesc = () => {
@@ -50,12 +60,12 @@ const heroSection = () => {
     rightSection.classList.add("right-section");
 
     const heroImage = createImage();
-    const heroTitle = createTitle();
+    const heroHeading = createTitle();
     const heroDesc = createDesc();
     const menuBtn = createBtn();
 
     heroSection.appendChild(heroImage);
-    rightSection.appendChild(heroTitle);
+    rightSection.appendChild(heroHeading);
     rightSection.appendChild(heroDesc);
     rightSection.appendChild(menuBtn);
     heroSection.appendChild(rightSection);
