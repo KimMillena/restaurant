@@ -19,11 +19,11 @@ const createTitle = () => {
 
     const heroTitle = document.createElement("h1");
     heroTitle.classList.add("hero-title");
-    heroTitle.textContent = "Restaurant";
+    heroTitle.textContent = "おいしい寿司";
 
     const heroSubtitle = document.createElement("span");
     heroSubtitle.classList.add("hero-subtitle");
-    heroSubtitle.textContent = "Subtitle";
+    heroSubtitle.textContent = "(Delicious Sushi)";
 
     heroHeading.appendChild(heroTitle);
     heroHeading.appendChild(heroSubtitle);
