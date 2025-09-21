@@ -45,6 +45,14 @@ nav {
     flex: 1;
 }
 
+/* MENU STYLINGS */
+
+.menu-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
 /* FOOTER STYLINGS */
 
 footer {
