@@ -42,3 +42,10 @@ nav {
     flex-direction: column;
     flex: 1;
 }
+
+/* FOOTER STYLINGS */
+
+footer {
+   position: fixed;
+   bottom: 0; 
+}
