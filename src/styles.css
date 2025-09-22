@@ -250,5 +250,31 @@ footer {
   display: flex;
   justify-content: space-evenly;
   gap: 4rem;
-  padding: 4rem;
+  padding: 2rem 3rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-container > li {
+  list-style-type: none;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link-container .footer-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.link-container .footer-link:hover {
+  text-decoration: underline;
 }
