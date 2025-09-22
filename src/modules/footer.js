@@ -57,6 +57,7 @@ export const footer = () => {
   const footerElement = document.createElement("footer");
 
   const author = document.createElement("a");
+  author.classList.add("author");
   author.textContent = "Made by Kim M.";
 
   const contactContainer = createContact();

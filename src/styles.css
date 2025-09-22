@@ -15,6 +15,8 @@
   --sushi-color: #fa8072;
   --dark-sushi-color: #e67366;
 
+  /* TEXT COLOR */
+  --white: #fff;
   --gray-tone: #333;
 
   /* BACKGROUND COLOR */
@@ -122,7 +124,7 @@ nav {
 }
 
 .hero-btn {
-  color: #fff;
+  color: var(--white);
   font-family: var(--secondary-font), sans-serif;
   font-size: 1rem;
   font-weight: 500;
@@ -247,6 +249,7 @@ nav {
 /* FOOTER STYLINGS */
 
 footer {
+  background-color: #0f0f0f;
   display: flex;
   justify-content: space-evenly;
   gap: 4rem;
@@ -256,20 +259,26 @@ footer {
 .contact-container {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .contact-container > li {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.9rem;
+  color: var(--white);
   list-style-type: none;
 }
 
 .link-container {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .link-container .footer-link {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.9rem;
+  color: var(--white);
   background: none;
   border: none;
   cursor: pointer;
@@ -277,4 +286,12 @@ footer {
 
 .link-container .footer-link:hover {
   text-decoration: underline;
+  text-decoration-color: var(--sushi-color);
+  text-underline-offset: 0.3rem;
+}
+
+.author {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.9rem;
+  color: var(--white);
 }
