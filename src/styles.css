@@ -21,8 +21,15 @@
   --bg-color: #fdfbf8;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
 }
 
 /* HEADER AND NAV STYLINGS */
@@ -64,6 +71,7 @@ nav {
 /* CONTENT STYLINGS */
 
 #content {
+  flex: 1;
   padding: 3rem 6rem;
 }
 
@@ -239,6 +247,8 @@ nav {
 /* FOOTER STYLINGS */
 
 footer {
-  position: fixed;
-  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4rem;
+  padding: 4rem;
 }
