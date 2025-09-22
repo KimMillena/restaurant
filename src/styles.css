@@ -13,6 +13,7 @@
 
   /* SUSHI COLOR */
   --sushi-color: #fa8072;
+  --dark-sushi-color: #e67366;
 
   --gray-tone: #333;
 
@@ -124,6 +125,10 @@ nav {
   cursor: pointer;
 }
 
+.hero-btn:hover {
+  background-color: var(--dark-sushi-color);
+}
+
 /* MENU STYLINGS */
 
 .menu-section {
@@ -136,6 +141,7 @@ nav {
 .menu-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.5rem;
 }
 
@@ -166,6 +172,7 @@ nav {
 
 .menu-desc,
 .menu-price {
+  text-align: center;
   font-family: var(--secondary-font), sans-serif;
 }
 
