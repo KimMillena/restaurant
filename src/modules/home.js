@@ -17,15 +17,15 @@ const createPhiloCards = () => {
   const philosophyDetails = [
     {
       title: "Tradition in Every Bite",
-      desc: "At Oishi Sushi, we honor the art of Japanese sushi. Every roll reflects generations of craftsmanship, made with care, balance, and respect for tradition.",
+      desc: "At Oishi Sushi, we honor the timeless art of Japanese sushi. Each roll is a reflection of generations of craftsmanship—balanced, precise, and deeply rooted in tradition. From the selection of rice to the cut of fish, we serve more than a meal—we serve heritage.",
     },
     {
       title: "Modern Craft, Timeless Soul",
-      desc: "We blend classic techniques with fresh creativity. Oishi Sushi is where tradition meets innovation—each dish a tribute to flavor and form.",
+      desc: "Oishi Sushi blends classic Edo-style techniques with modern creativity. Our chefs respect tradition while embracing innovation, crafting dishes that speak to both history and the evolving palate. It’s sushi with soul—refined, expressive, and unforgettable.",
     },
     {
       title: "Simplicity. Purity. Harmony",
-      desc: "Inspired by Japanese values, we serve sushi that’s clean, honest, and beautifully composed. At Oishi Sushi, less is truly more.",
+      desc: "Inspired by the Japanese principles of shibui and omotenashi, we believe in letting ingredients speak. At Oishi Sushi, every dish is composed with care—clean flavors, honest presentation, and a quiet elegance that invites reflection.",
     },
   ];
 

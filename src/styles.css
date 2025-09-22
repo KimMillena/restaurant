@@ -77,6 +77,13 @@ nav {
   padding: 3rem 6rem;
 }
 
+.home-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  gap: 5rem;
+}
+
 /* HERO SECTION STYLINGS */
 
 .hero-section {
@@ -139,6 +146,43 @@ nav {
   background-color: var(--dark-sushi-color);
 }
 
+/* PHILOSOPHY SECTION STYLINGS */
+
+.philosophy-header {
+  font-family: "Noto Serif JP", serif;
+  text-decoration: underline;
+  text-decoration-color: var(--sushi-color);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.philo-card-container {
+  display: flex;
+  gap: 5rem;
+}
+
+.philo-card {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 1px solid #0f0f0f;
+  border-radius: 1rem;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.philo-card .philo-title {
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.25rem;
+}
+
+.philo-card .philo-desc {
+  font-family: "Noto Sans JP", serif;
+  line-height: 1.6;
+}
+
 /* MENU STYLINGS */
 
 .menu-section {
@@ -165,6 +209,7 @@ nav {
   font-family: var(--primary-font), serif;
   text-decoration: underline;
   text-decoration-color: var(--sushi-color);
+  text-decoration-thickness: 2px;
   text-underline-offset: 0.75rem;
   margin-bottom: 2rem;
 }
@@ -211,6 +256,7 @@ nav {
   font-family: var(--primary-font), serif;
   text-decoration: underline;
   text-decoration-color: var(--sushi-color);
+  text-decoration-thickness: 2px;
   text-underline-offset: 0.75rem;
   margin-bottom: 2rem;
 }
