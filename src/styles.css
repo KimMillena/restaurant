@@ -151,7 +151,6 @@ nav {
 .menu-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 0.5rem;
 }
 
@@ -182,7 +181,6 @@ nav {
 
 .menu-desc,
 .menu-price {
-  text-align: center;
   font-family: var(--secondary-font), sans-serif;
 }
 

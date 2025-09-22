@@ -5,6 +5,67 @@ console.log("Webpack resolved image to:", sushiHero);
 
 const pageContent = document.querySelector("#content");
 
+const createPhiloHeader = () => {
+  const philosophyHeader = document.createElement("h1");
+  philosophyHeader.classList.add("philosophy-header");
+  philosophyHeader.textContent = "Why Oishi Sushi?";
+
+  return philosophyHeader;
+};
+
+const createPhiloCards = () => {
+  const philosophyDetails = [
+    {
+      title: "Tradition in Every Bite",
+      desc: "At Oishi Sushi, we honor the art of Japanese sushi. Every roll reflects generations of craftsmanship, made with care, balance, and respect for tradition.",
+    },
+    {
+      title: "Modern Craft, Timeless Soul",
+      desc: "We blend classic techniques with fresh creativity. Oishi Sushi is where tradition meets innovation—each dish a tribute to flavor and form.",
+    },
+    {
+      title: "Simplicity. Purity. Harmony",
+      desc: "Inspired by Japanese values, we serve sushi that’s clean, honest, and beautifully composed. At Oishi Sushi, less is truly more.",
+    },
+  ];
+
+  const philoCardContainer = document.createElement("div");
+  philoCardContainer.classList.add("philo-card-container");
+
+  const philosophies = philosophyDetails.map((philo, index) => {
+    const philoCard = document.createElement("article");
+    philoCard.classList.add("philo-card");
+    philoCard.id = `philo-card${index}`;
+
+    const philoTitle = document.createElement("h3");
+    philoTitle.classList.add("philo-title");
+    philoTitle.textContent = philo.title;
+
+    const philoDesc = document.createElement("p");
+    philoDesc.classList.add("philo-desc");
+    philoDesc.textContent = philo.desc;
+
+    philoCard.appendChild(philoTitle);
+    philoCard.appendChild(philoDesc);
+
+    return philoCard;
+  });
+
+  philosophies.forEach((card) => philoCardContainer.appendChild(card));
+
+  return philoCardContainer;
+};
+
+const philosophySection = () => {
+  const philosophySection = document.createElement("section");
+  philosophySection.classList.add("philosophy-section");
+
+  philosophySection.appendChild(createPhiloHeader());
+  philosophySection.appendChild(createPhiloCards());
+
+  return philosophySection;
+};
+
 const createImage = () => {
   const heroImage = document.createElement("img");
   heroImage.classList.add("hero-img");
@@ -79,5 +140,7 @@ export const home = () => {
   homeContainer.classList.add("home-container");
 
   homeContainer.appendChild(heroSection());
+  homeContainer.appendChild(philosophySection());
+
   pageContent.appendChild(homeContainer);
 };
