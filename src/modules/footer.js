@@ -53,15 +53,22 @@ const createLinks = () => {
   return linkContainer;
 };
 
+const createAuthor = () => {
+  const AUTHOR = "Kim M.";
+
+  const author = document.createElement("p");
+  author.classList.add("author");
+  author.textContent = `Made by @${AUTHOR}`;
+
+  return author;
+};
+
 export const footer = () => {
   const footerElement = document.createElement("footer");
 
-  const author = document.createElement("a");
-  author.classList.add("author");
-  author.textContent = "Made by Kim M.";
-
   const contactContainer = createContact();
   const linkContainer = createLinks();
+  const author = createAuthor();
 
   footerElement.appendChild(contactContainer);
   footerElement.appendChild(linkContainer);
