@@ -335,6 +335,7 @@ footer {
 }
 
 .link-container .footer-link:hover {
+  color: var(--sushi-color);
   text-decoration: underline;
   text-decoration-color: var(--sushi-color);
   text-underline-offset: 0.3rem;
