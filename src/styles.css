@@ -75,12 +75,12 @@ nav {
 #content {
   flex: 1;
   padding: 3rem 6rem;
+  margin-bottom: 2rem;
 }
 
 .home-container {
   display: flex;
   flex-direction: column;
-  padding-bottom: 2rem;
   gap: 5rem;
 }
 
@@ -211,6 +211,7 @@ nav {
   text-decoration-color: var(--sushi-color);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.75rem;
+  text-align: center;
   margin-bottom: 2rem;
 }
 
@@ -265,6 +266,7 @@ nav {
   width: 90%;
   font-family: var(--secondary-font), sans-serif;
   line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 .image-container {
