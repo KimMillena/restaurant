@@ -190,7 +190,9 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, 250px);
   justify-content: center;
-  gap: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem 8rem;
 }
 
 .menu-card {
