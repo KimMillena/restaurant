@@ -159,6 +159,7 @@ nav {
 
 .philo-card-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 5rem;
 }
 
@@ -187,7 +188,7 @@ nav {
 
 .menu-section {
   display: grid;
-  grid-template-columns: repeat(4, 250px);
+  grid-template-columns: repeat(auto-fit, 250px);
   justify-content: center;
   gap: 5rem;
 }
@@ -246,11 +247,12 @@ nav {
 .about-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 3rem;
 }
 
 .left-container {
-  width: 50%;
+  width: 60%;
 }
 
 .about-title {
