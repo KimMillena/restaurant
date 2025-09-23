@@ -1,8 +1,6 @@
 import { menu } from "./menu.js";
 import sushiHero from "../assets/img/sushi-hero.jpg";
 
-console.log("Webpack resolved image to:", sushiHero);
-
 const pageContent = document.querySelector("#content");
 
 const createPhiloHeader = () => {

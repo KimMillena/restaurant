@@ -1,3 +1,5 @@
+import { setActivePage } from "../index.js";
+
 const createContact = () => {
   const contactDetails = {
     contactNo: "+81-3-4567-8899",
@@ -28,27 +30,23 @@ const createContact = () => {
 };
 
 const createLinks = () => {
+  const footerLinks = ["home", "menu", "about"];
+
   const linkContainer = document.createElement("div");
   linkContainer.classList.add("link-container");
 
-  const footerLink = document.createElement("button");
-  footerLink.classList.add("footer-link");
-  footerLink.id = "footer-link1";
-  footerLink.textContent = "Home";
+  footerLinks.forEach((link) => {
+    const footerLink = document.createElement("button");
+    footerLink.classList.add("footer-link");
+    footerLink.id = link;
+    footerLink.textContent = link.charAt(0).toUpperCase() + link.slice(1);
 
-  const footerLink1 = document.createElement("button");
-  footerLink1.classList.add("footer-link");
-  footerLink1.id = "footer-link1";
-  footerLink1.textContent = "Menu";
+    footerLink.addEventListener("click", (e) => {
+      setActivePage(e);
+    });
 
-  const footerLink2 = document.createElement("button");
-  footerLink2.classList.add("footer-link");
-  footerLink2.id = "footer-link1";
-  footerLink2.textContent = "About";
-
-  linkContainer.appendChild(footerLink);
-  linkContainer.appendChild(footerLink1);
-  linkContainer.appendChild(footerLink2);
+    linkContainer.appendChild(footerLink);
+  });
 
   return linkContainer;
 };

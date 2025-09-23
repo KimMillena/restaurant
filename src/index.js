@@ -11,26 +11,32 @@ const aboutBtn = document.querySelector(".about-btn");
 
 pageLoad();
 
-const setActivePage = (e) => {
-    pageContent.innerHTML = "";
-    const page = e.target.id;
+export const setActivePage = (e) => {
+  pageContent.innerHTML = "";
+  const page = e.target.id;
 
-     switch(page) {
-        case "home":
-            home();
-            break;
-        case "menu":
-            menu();
-            break;
-        case "about":
-            about();
-            break;
-        default:
-            home();
-            break;
-    }
+  switch (page) {
+    case "home":
+      home();
+      break;
+    case "menu":
+      menu();
+      break;
+    case "about":
+      about();
+      break;
+    default:
+      home();
+      break;
+  }
 };
 
-homeBtn.addEventListener("click", (e) => { setActivePage(e) });
-menuBtn.addEventListener("click", (e) => { setActivePage(e) });
-aboutBtn.addEventListener("click", (e) => { setActivePage(e) });
+homeBtn.addEventListener("click", (e) => {
+  setActivePage(e);
+});
+menuBtn.addEventListener("click", (e) => {
+  setActivePage(e);
+});
+aboutBtn.addEventListener("click", (e) => {
+  setActivePage(e);
+});
